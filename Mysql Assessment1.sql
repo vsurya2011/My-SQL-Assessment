@@ -69,6 +69,10 @@ CREATE TABLE Members (
     join_date DATE NOT NULL DEFAULT (CURDATE())
 );
 desc Members;
+INSERT INTO Members (member_name, join_date) VALUES 
+('Luffy', '2022-02-25'),
+('Nami', '2024-03-10'),
+('Zoro', '2023-06-18');
 
 SELECT * FROM Members
 WHERE YEAR(join_date) = 2024
